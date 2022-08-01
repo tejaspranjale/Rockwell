@@ -4,10 +4,10 @@ var app=express();
 app.get("/",function(req,res){
     res.sendFile("./public/index.html",{root:__dirname})
 });
-app.get("/about",function(req,res){
+app.post("/about",function(req,res){
     res.sendFile("./public/about.html",{root:__dirname})
 });
-app.get("/thankyou",function(req,res){
+app.post("/thankyou",function(req,res){
     res.sendFile("./public/thankyou.html",{root:__dirname})
 });
 
